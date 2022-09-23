@@ -9,7 +9,6 @@ import docx2txt
 
 
 def read_word(path):
-    word_content = []
     text = docx2txt.process(path)
     text_sentences = sent_tokenize(text)
     return text_sentences
